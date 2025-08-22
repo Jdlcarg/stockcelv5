@@ -1,0 +1,51 @@
+SOLICITUD DE ANÁLISIS PROFUNDO DEL SISTEMA
+
+Necesito que realices un análisis completo y exhaustivo de todo mi proyecto importado desde GitHub. Este análisis debe seguir estrictamente las reglas obligatorias que he configurado en tus ajustes.
+
+PROCESO OBLIGATORIO A SEGUIR:
+
+VERIFICACIÓN INICIAL DE BASE DE DATOS:
+
+Confirma que process.env.DATABASE_URL apunta a: postgresql://neondb_owner:npg_7wSmBL4Munbe@ep-ancient-poetry-acbu2opi-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+Si encuentras otra configuración, corrígela inmediatamente
+REVISIÓN DE DOCUMENTACIÓN EXISTENTE:
+
+Busca y revisa el archivo "database_schema.txt" en la raíz del proyecto
+Busca y revisa "SYSTEM_DOCUMENTATION.md" si existe
+Si no existe SYSTEM_DOCUMENTATION.md, créalo durante este análisis
+ANÁLISIS COMPLETO DEL PROYECTO:
+
+Examina TODOS los archivos del proyecto
+Identifica la arquitectura y estructura del sistema
+Mapea todas las funcionalidades existentes
+IDENTIFICA QUÉ FUNCIONALIDADES YA FUNCIONAN CORRECTAMENTE (esto es crítico)
+Detecta discrepancias entre el código y el esquema de base de datos
+Identifica dependencias, configuraciones y integraciones
+DOCUMENTACIÓN DEL ANÁLISIS:
+
+Crea/actualiza SYSTEM_DOCUMENTATION.md con:
+Descripción general del sistema
+Arquitectura y tecnologías utilizadas
+Funcionalidades existentes que YA FUNCIONAN
+Estructura de archivos y directorios
+Configuraciones importantes
+Dependencias y integraciones
+Discrepancias encontradas entre código y DB
+Recomendaciones para correcciones (sin tocar lo que funciona)
+REPORTE DE HALLAZGOS:
+
+Lista de funcionalidades que funcionan correctamente
+Lista de problemas o inconsistencias encontradas
+Sugerencias de mejoras SIN afectar código funcional
+Scripts SQL necesarios para alinear la base de datos (si aplica)
+RECORDATORIOS CRÍTICOS:
+
+NO modifiques, renombres o elimines archivos que ya funcionan
+NO cambies lógica existente que opera correctamente
+Si hay discrepancias entre código y DB, corrige el CÓDIGO, no la base de datos
+Proporciona scripts SQL para que yo los ejecute manualmente si necesitas cambios en DB
+Preserva absolutamente todas las funcionalidades que ya operan
+OBJETIVO: Quiero que te familiarices completamente con mi proyecto para poder asistirme eficientemente en futuras modificaciones y correcciones, siempre preservando lo que ya funciona.
+
+Procede con este análisis completo ahora.
+

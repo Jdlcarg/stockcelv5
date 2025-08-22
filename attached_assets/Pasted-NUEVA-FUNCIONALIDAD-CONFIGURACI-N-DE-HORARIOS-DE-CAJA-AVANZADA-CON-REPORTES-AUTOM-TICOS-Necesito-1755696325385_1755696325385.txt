@@ -1,0 +1,68 @@
+NUEVA FUNCIONALIDAD: CONFIGURACIÓN DE HORARIOS DE CAJA AVANZADA CON REPORTES AUTOMÁTICOS
+
+Necesito que implementes una nueva funcionalidad siguiendo estrictamente las reglas configuradas. IMPORTANTE: Preserva absolutamente toda la funcionalidad existente de Caja Avanzada que ya funciona correctamente.
+
+FUNCIONALIDAD REQUERIDA:
+
+1. CONFIGURACIÓN DE HORARIOS (Panel de Admin):
+
+Crear sección en configuraciones para que el admin configure:
+Hora de apertura automática de caja
+Hora de cierre automático de caja
+Días de la semana activos
+Interface simple y clara para establecer estos horarios
+2. AUTOMATIZACIÓN DE CAJA:
+
+Sistema que abra y cierre la caja automáticamente según horarios configurados
+CRÍTICO: Las estadísticas de Caja Avanzada deben mantenerse tal como están
+NO reiniciar contadores ni estadísticas existentes
+Solo controlar apertura/cierre automático
+3. GENERACIÓN AUTOMÁTICA DE REPORTES:
+
+Al cerrarse la caja automáticamente, crear reporte completo en "📊 Historial de Cierres Diarios"
+El reporte debe incluir TODO el contenido del período:
+Todas las transacciones (detalle por detalle)
+Todos los pagos y gastos
+Todos los movimientos de productos
+INFORMACIÓN COMPLETA DE VENDEDORES:
+Ventas por vendedor
+Comisiones generadas por vendedor
+Transacciones realizadas por cada vendedor
+Rendimiento individual de cada vendedor
+Totales y estadísticas por vendedor
+Estadísticas completas del período
+Resumen financiero total
+TODO sin excepción - cada detalle registrado incluyendo vendedores
+Reporte listo para descargar inmediatamente
+4. RELOJ EN TIEMPO REAL:
+
+Agregar reloj digital con hora actual
+Ubicación: siempre visible (esquina superior o área fija)
+Formato claro y legible
+Actualización en tiempo real
+REQUISITOS TÉCNICOS:
+
+Usar la base de datos Neon configurada
+Verificar compatibilidad con módulos existentes (Pagos/Gastos, Productos, Vendedores, etc.)
+Mantener todas las interconexiones actuales funcionando
+Asegurar que la relación Caja Avanzada ↔ Vendedores se preserve completamente
+Crear tablas adicionales solo si es necesario (proporcionar scripts SQL para que yo lo ejecute manualmente)
+PROCESO OBLIGATORIO:
+
+Analiza el módulo Caja Avanzada actual que YA FUNCIONA (incluyendo integración con Vendedores)
+Identifica exactamente qué NO debe tocarse
+Agrega solo la nueva funcionalidad sin afectar lo existente
+Crea archivos nuevos separados si es necesario
+Proporciona scripts SQL para nuevas tablas si aplica
+ENTREGABLES:
+
+Código para configuración de horarios
+Sistema de automatización de apertura/cierre
+Generador de reportes completos automáticos (incluyendo datos de vendedores)
+Reloj en tiempo real visible
+Scripts SQL si necesitas nuevas tablas
+Documentación de cambios en SYSTEM_DOCUMENTATION.md
+RECORDATORIO CRÍTICO: NO modifiques la lógica existente de Caja Avanzada ni su integración con Vendedores que ya funciona. Solo AGREGA esta nueva funcionalidad.
+
+Procede con la implementación ahora.
+

@@ -1,0 +1,407 @@
+                                                                          List of databases
+  Name  |    Owner     | Encoding | Locale Provider | Collate |  Ctype  | Locale | ICU Rules |        Access privileges        |   Size   | Tablespace | Description 
+--------+--------------+----------+-----------------+---------+---------+--------+-----------+---------------------------------+----------+------------+-------------
+ neondb | neondb_owner | UTF8     | libc            | C.UTF-8 | C.UTF-8 |        |           | =Tc/neondb_owner               +| 10048 kB | pg_default | 
+        |              |          |                 |         |         |        |           | neondb_owner=CTc/neondb_owner  +|          |            | 
+        |              |          |                 |         |         |        |           | neon_superuser=CTc/neondb_owner |          |            | 
+(1 row)
+
+   info   
+----------
+ SCHEMAS:
+(1 row)
+
+                                       List of schemas
+  Name  |       Owner       |           Access privileges            |      Description       
+--------+-------------------+----------------------------------------+------------------------
+ public | pg_database_owner | pg_database_owner=UC/pg_database_owner+| standard public schema
+        |                   | =U/pg_database_owner                   | 
+(1 row)
+
+  info   
+---------
+ TABLES:
+(1 row)
+
+                                                                              List of relations
+ Schema |            Name             | Type  |    Owner     | Persistence | Access method |    Size    |                             Description                             
+--------+-----------------------------+-------+--------------+-------------+---------------+------------+---------------------------------------------------------------------
+ public | cash_auto_operations_log    | table | neondb_owner | permanent   | heap          | 48 kB      | Log de operaciones automáticas de caja (apertura, cierre, reportes)
+ public | cash_movements              | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | cash_register               | table | neondb_owner | permanent   | heap          | 40 kB      | 
+ public | cash_schedule_client_config | table | neondb_owner | permanent   | heap          | 8192 bytes | Configuración global de horarios automáticos por cliente
+ public | cash_schedule_config        | table | neondb_owner | permanent   | heap          | 16 kB      | Configuración de horarios automáticos de caja por cliente
+ public | cash_schedule_periods       | table | neondb_owner | permanent   | heap          | 8192 bytes | Períodos de horarios múltiples de caja por cliente y día de semana
+ public | clients                     | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | company_configuration       | table | neondb_owner | permanent   | heap          | 272 kB     | 
+ public | configuration               | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | currency_exchanges          | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | customer_debts              | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | customers                   | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | daily_reports               | table | neondb_owner | permanent   | heap          | 136 kB     | 
+ public | debt_payments               | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | expenses                    | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | generated_reports           | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | order_items                 | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | orders                      | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | password_reset_tokens       | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | payments                    | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | product_history             | table | neondb_owner | permanent   | heap          | 64 kB      | 
+ public | products                    | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | reseller_configuration      | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | reseller_sales              | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | resellers                   | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | stock_control_items         | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | stock_control_sessions      | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | system_configuration        | table | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | users                       | table | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | vendors                     | table | neondb_owner | permanent   | heap          | 16 kB      | 
+(30 rows)
+
+       info        
+-------------------
+ TABLE STRUCTURES:
+(1 row)
+
+                                                                                   List of relations
+ Schema |                Name                |   Type   |    Owner     | Persistence | Access method |    Size    |                             Description                             
+--------+------------------------------------+----------+--------------+-------------+---------------+------------+---------------------------------------------------------------------
+ public | cash_auto_operations_log           | table    | neondb_owner | permanent   | heap          | 48 kB      | Log de operaciones automáticas de caja (apertura, cierre, reportes)
+ public | cash_auto_operations_log_id_seq    | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | cash_movements                     | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | cash_movements_id_seq              | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | cash_register                      | table    | neondb_owner | permanent   | heap          | 40 kB      | 
+ public | cash_register_id_seq               | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | cash_schedule_client_config        | table    | neondb_owner | permanent   | heap          | 8192 bytes | Configuración global de horarios automáticos por cliente
+ public | cash_schedule_client_config_id_seq | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | cash_schedule_config               | table    | neondb_owner | permanent   | heap          | 16 kB      | Configuración de horarios automáticos de caja por cliente
+ public | cash_schedule_config_id_seq        | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | cash_schedule_periods              | table    | neondb_owner | permanent   | heap          | 8192 bytes | Períodos de horarios múltiples de caja por cliente y día de semana
+ public | cash_schedule_periods_id_seq       | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | clients                            | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | clients_id_seq                     | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | company_configuration              | table    | neondb_owner | permanent   | heap          | 272 kB     | 
+ public | company_configuration_id_seq       | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | configuration                      | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | configuration_id_seq               | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | currency_exchanges                 | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | currency_exchanges_id_seq          | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | customer_debts                     | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | customer_debts_id_seq              | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | customers                          | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | customers_id_seq                   | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | daily_reports                      | table    | neondb_owner | permanent   | heap          | 136 kB     | 
+ public | daily_reports_id_seq               | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | debt_payments                      | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | debt_payments_id_seq               | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | expenses                           | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | expenses_id_seq                    | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | generated_reports                  | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | generated_reports_id_seq           | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | order_items                        | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | order_items_id_seq                 | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | orders                             | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | orders_id_seq                      | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | password_reset_tokens              | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | password_reset_tokens_id_seq       | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | payments                           | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | payments_id_seq                    | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | product_history                    | table    | neondb_owner | permanent   | heap          | 64 kB      | 
+ public | product_history_id_seq             | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | products                           | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | products_id_seq                    | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | reseller_configuration             | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | reseller_configuration_id_seq      | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | reseller_sales                     | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | reseller_sales_id_seq              | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | resellers                          | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | resellers_id_seq                   | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | stock_control_items                | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | stock_control_items_id_seq         | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | stock_control_sessions             | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | stock_control_sessions_id_seq      | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | system_configuration               | table    | neondb_owner | permanent   | heap          | 8192 bytes | 
+ public | system_configuration_id_seq        | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | users                              | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | users_id_seq                       | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+ public | vendors                            | table    | neondb_owner | permanent   | heap          | 16 kB      | 
+ public | vendors_id_seq                     | sequence | neondb_owner | permanent   |               | 8192 bytes | 
+(60 rows)
+
+     info     
+--------------
+ CONSTRAINTS:
+(1 row)
+
+         table_name          |                    constraint_name                    | constraint_type |       column_name       |     foreign_table_name      | foreign_column_name 
+-----------------------------+-------------------------------------------------------+-----------------+-------------------------+-----------------------------+---------------------
+ cash_register               | cash_register_pkey                                    | PRIMARY KEY     | id                      | cash_register               | id
+ daily_reports               | daily_reports_pkey                                    | PRIMARY KEY     | id                      | daily_reports               | id
+ users                       | users_pkey                                            | PRIMARY KEY     | id                      | users                       | id
+ cash_movements              | cash_movements_cash_register_id_cash_register_id_fk   | FOREIGN KEY     | cash_register_id        | cash_register               | id
+ resellers                   | resellers_email_unique                                | UNIQUE          | email                   | resellers                   | email
+ cash_movements              | cash_movements_user_id_users_id_fk                    | FOREIGN KEY     | user_id                 | users                       | id
+ resellers                   | resellers_pkey                                        | PRIMARY KEY     | id                      | resellers                   | id
+ cash_movements              | cash_movements_pkey                                   | PRIMARY KEY     | id                      | cash_movements              | id
+ clients                     | clients_email_unique                                  | UNIQUE          | email                   | clients                     | email
+ clients                     | clients_pkey                                          | PRIMARY KEY     | id                      | clients                     | id
+ products                    | products_pkey                                         | PRIMARY KEY     | id                      | products                    | id
+ daily_reports               | daily_reports_client_id_clients_id_fk                 | FOREIGN KEY     | client_id               | clients                     | id
+ cash_register               | cash_register_client_id_clients_id_fk                 | FOREIGN KEY     | client_id               | clients                     | id
+ users                       | users_client_id_clients_id_fk                         | FOREIGN KEY     | client_id               | clients                     | id
+ cash_movements              | cash_movements_client_id_clients_id_fk                | FOREIGN KEY     | client_id               | clients                     | id
+ resellers                   | resellers_client_id_fkey                              | FOREIGN KEY     | client_id               | clients                     | id
+ payments                    | payments_pkey                                         | PRIMARY KEY     | id                      | payments                    | id
+ products                    | products_client_id_clients_id_fk                      | FOREIGN KEY     | client_id               | clients                     | id
+ payments                    | payments_client_id_clients_id_fk                      | FOREIGN KEY     | client_id               | clients                     | id
+ password_reset_tokens       | password_reset_tokens_user_id_users_id_fk             | FOREIGN KEY     | user_id                 | users                       | id
+ product_history             | product_history_client_id_clients_id_fk               | FOREIGN KEY     | client_id               | clients                     | id
+ password_reset_tokens       | password_reset_tokens_pkey                            | PRIMARY KEY     | id                      | password_reset_tokens       | id
+ password_reset_tokens       | password_reset_tokens_token_unique                    | UNIQUE          | token                   | password_reset_tokens       | token
+ customer_debts              | customer_debts_client_id_clients_id_fk                | FOREIGN KEY     | client_id               | clients                     | id
+ customer_debts              | customer_debts_pkey                                   | PRIMARY KEY     | id                      | customer_debts              | id
+ reseller_configuration      | reseller_configuration_reseller_id_resellers_id_fk    | FOREIGN KEY     | reseller_id             | resellers                   | id
+ reseller_configuration      | reseller_configuration_pkey                           | PRIMARY KEY     | id                      | reseller_configuration      | id
+ order_items                 | order_items_product_id_products_id_fk                 | FOREIGN KEY     | product_id              | products                    | id
+ order_items                 | order_items_order_id_orders_id_fk                     | FOREIGN KEY     | order_id                | orders                      | id
+ order_items                 | order_items_pkey                                      | PRIMARY KEY     | id                      | order_items                 | id
+ customers                   | customers_client_id_clients_id_fk                     | FOREIGN KEY     | client_id               | clients                     | id
+ customers                   | customers_pkey                                        | PRIMARY KEY     | id                      | customers                   | id
+ customer_debts              | customer_debts_customer_id_customers_id_fk            | FOREIGN KEY     | customer_id             | customers                   | id
+ cash_movements              | cash_movements_customer_id_customers_id_fk            | FOREIGN KEY     | customer_id             | customers                   | id
+ orders                      | orders_customer_id_customers_id_fk                    | FOREIGN KEY     | customer_id             | customers                   | id
+ currency_exchanges          | currency_exchanges_user_id_users_id_fk                | FOREIGN KEY     | user_id                 | users                       | id
+ currency_exchanges          | currency_exchanges_client_id_clients_id_fk            | FOREIGN KEY     | client_id               | clients                     | id
+ currency_exchanges          | currency_exchanges_pkey                               | PRIMARY KEY     | id                      | currency_exchanges          | id
+ expenses                    | expenses_cash_register_id_cash_register_id_fk         | FOREIGN KEY     | cash_register_id        | cash_register               | id
+ expenses                    | expenses_user_id_users_id_fk                          | FOREIGN KEY     | user_id                 | users                       | id
+ expenses                    | expenses_client_id_clients_id_fk                      | FOREIGN KEY     | client_id               | clients                     | id
+ expenses                    | expenses_pkey                                         | PRIMARY KEY     | id                      | expenses                    | id
+ system_configuration        | system_configuration_pkey                             | PRIMARY KEY     | id                      | system_configuration        | id
+ product_history             | product_history_user_id_users_id_fk                   | FOREIGN KEY     | user_id                 | users                       | id
+ product_history             | product_history_product_id_products_id_fk             | FOREIGN KEY     | product_id              | products                    | id
+ product_history             | product_history_pkey                                  | PRIMARY KEY     | id                      | product_history             | id
+ orders                      | orders_pkey                                           | PRIMARY KEY     | id                      | orders                      | id
+ orders                      | orders_client_id_clients_id_fk                        | FOREIGN KEY     | client_id               | clients                     | id
+ payments                    | payments_order_id_orders_id_fk                        | FOREIGN KEY     | order_id                | orders                      | id
+ customer_debts              | customer_debts_order_id_orders_id_fk                  | FOREIGN KEY     | order_id                | orders                      | id
+ company_configuration       | company_configuration_client_id_clients_id_fk         | FOREIGN KEY     | client_id               | clients                     | id
+ company_configuration       | company_configuration_pkey                            | PRIMARY KEY     | id                      | company_configuration       | id
+ reseller_sales              | reseller_sales_reseller_id_resellers_id_fk            | FOREIGN KEY     | reseller_id             | resellers                   | id
+ reseller_sales              | reseller_sales_client_id_clients_id_fk                | FOREIGN KEY     | client_id               | clients                     | id
+ reseller_sales              | reseller_sales_pkey                                   | PRIMARY KEY     | id                      | reseller_sales              | id
+ vendors                     | vendors_pkey                                          | PRIMARY KEY     | id                      | vendors                     | id
+ cash_movements              | cash_movements_vendor_id_vendors_id_fk                | FOREIGN KEY     | vendor_id               | vendors                     | id
+ vendors                     | vendors_client_id_clients_id_fk                       | FOREIGN KEY     | client_id               | clients                     | id
+ orders                      | orders_vendor_id_vendors_id_fk                        | FOREIGN KEY     | vendor_id               | vendors                     | id
+ configuration               | configuration_client_id_clients_id_fk                 | FOREIGN KEY     | client_id               | clients                     | id
+ configuration               | configuration_pkey                                    | PRIMARY KEY     | id                      | configuration               | id
+ stock_control_items         | stock_control_items_product_id_products_id_fk         | FOREIGN KEY     | product_id              | products                    | id
+ stock_control_items         | stock_control_items_pkey                              | PRIMARY KEY     | id                      | stock_control_items         | id
+ debt_payments               | debt_payments_cash_register_id_cash_register_id_fk    | FOREIGN KEY     | cash_register_id        | cash_register               | id
+ debt_payments               | debt_payments_user_id_users_id_fk                     | FOREIGN KEY     | user_id                 | users                       | id
+ debt_payments               | debt_payments_client_id_clients_id_fk                 | FOREIGN KEY     | client_id               | clients                     | id
+ debt_payments               | debt_payments_debt_id_customer_debts_id_fk            | FOREIGN KEY     | debt_id                 | customer_debts              | id
+ debt_payments               | debt_payments_pkey                                    | PRIMARY KEY     | id                      | debt_payments               | id
+ generated_reports           | generated_reports_daily_report_id_daily_reports_id_fk | FOREIGN KEY     | daily_report_id         | daily_reports               | id
+ generated_reports           | generated_reports_client_id_clients_id_fk             | FOREIGN KEY     | client_id               | clients                     | id
+ generated_reports           | generated_reports_pkey                                | PRIMARY KEY     | id                      | generated_reports           | id
+ stock_control_sessions      | stock_control_sessions_pkey                           | PRIMARY KEY     | id                      | stock_control_sessions      | id
+ stock_control_sessions      | stock_control_sessions_client_id_fkey                 | FOREIGN KEY     | client_id               | clients                     | id
+ stock_control_sessions      | stock_control_sessions_user_id_fkey                   | FOREIGN KEY     | user_id                 | users                       | id
+ cash_schedule_config        | cash_schedule_config_pkey                             | PRIMARY KEY     | id                      | cash_schedule_config        | id
+ cash_schedule_config        | cash_schedule_config_client_id_key                    | UNIQUE          | client_id               | cash_schedule_config        | client_id
+ cash_schedule_config        | cash_schedule_config_client_id_fkey                   | FOREIGN KEY     | client_id               | clients                     | id
+ cash_auto_operations_log    | cash_auto_operations_log_pkey                         | PRIMARY KEY     | id                      | cash_auto_operations_log    | id
+ cash_auto_operations_log    | cash_auto_operations_log_client_id_fkey               | FOREIGN KEY     | client_id               | clients                     | id
+ cash_auto_operations_log    | cash_auto_operations_log_cash_register_id_fkey        | FOREIGN KEY     | cash_register_id        | cash_register               | id
+ cash_auto_operations_log    | cash_auto_operations_log_report_id_fkey               | FOREIGN KEY     | report_id               | daily_reports               | id
+ daily_reports               | daily_reports_cash_register_closed_id_fkey            | FOREIGN KEY     | cash_register_closed_id | cash_register               | id
+ cash_schedule_periods       | cash_schedule_periods_open_hour_check                 | CHECK           |                         | cash_schedule_periods       | open_hour
+ cash_schedule_periods       | cash_schedule_periods_open_minute_check               | CHECK           |                         | cash_schedule_periods       | open_minute
+ cash_schedule_periods       | cash_schedule_periods_close_hour_check                | CHECK           |                         | cash_schedule_periods       | close_hour
+ cash_schedule_periods       | cash_schedule_periods_close_minute_check              | CHECK           |                         | cash_schedule_periods       | close_minute
+ cash_schedule_periods       | cash_schedule_periods_pkey                            | PRIMARY KEY     | id                      | cash_schedule_periods       | id
+ cash_schedule_periods       | cash_schedule_periods_client_id_fkey                  | FOREIGN KEY     | client_id               | clients                     | id
+ cash_schedule_client_config | cash_schedule_client_config_pkey                      | PRIMARY KEY     | id                      | cash_schedule_client_config | id
+ cash_schedule_client_config | cash_schedule_client_config_client_id_key             | UNIQUE          | client_id               | cash_schedule_client_config | client_id
+ cash_schedule_client_config | cash_schedule_client_config_client_id_fkey            | FOREIGN KEY     | client_id               | clients                     | id
+ cash_auto_operations_log    | cash_auto_operations_log_schedule_period_id_fkey      | FOREIGN KEY     | schedule_period_id      | cash_schedule_periods       | id
+ cash_register               | 2200_16483_1_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_2_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_3_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_4_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_5_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_6_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_7_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_8_not_null                                 | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_12_not_null                                | CHECK           |                         |                             | 
+ cash_register               | 2200_16483_13_not_null                                | CHECK           |                         |                             | 
+ clients                     | 2200_16492_1_not_null                                 | CHECK           |                         |                             | 
+ clients                     | 2200_16492_2_not_null                                 | CHECK           |                         |                             | 
+ clients                     | 2200_16492_3_not_null                                 | CHECK           |                         |                             | 
+ company_configuration       | 2200_16502_1_not_null                                 | CHECK           |                         |                             | 
+ company_configuration       | 2200_16502_2_not_null                                 | CHECK           |                         |                             | 
+ company_configuration       | 2200_16502_3_not_null                                 | CHECK           |                         |                             | 
+ company_configuration       | 2200_16502_4_not_null                                 | CHECK           |                         |                             | 
+ company_configuration       | 2200_16502_5_not_null                                 | CHECK           |                         |                             | 
+ configuration               | 2200_16510_1_not_null                                 | CHECK           |                         |                             | 
+ configuration               | 2200_16510_2_not_null                                 | CHECK           |                         |                             | 
+ configuration               | 2200_16510_3_not_null                                 | CHECK           |                         |                             | 
+ configuration               | 2200_16510_4_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_1_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_2_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_3_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_4_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_5_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_6_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_7_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_8_not_null                                 | CHECK           |                         |                             | 
+ currency_exchanges          | 2200_16518_10_not_null                                | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_1_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_2_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_3_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_5_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_7_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_8_not_null                                 | CHECK           |                         |                             | 
+ customer_debts              | 2200_16526_9_not_null                                 | CHECK           |                         |                             | 
+ customers                   | 2200_16537_1_not_null                                 | CHECK           |                         |                             | 
+ customers                   | 2200_16537_2_not_null                                 | CHECK           |                         |                             | 
+ customers                   | 2200_16537_3_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_1_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_2_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_3_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_5_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_6_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_8_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_9_not_null                                 | CHECK           |                         |                             | 
+ debt_payments               | 2200_16554_10_not_null                                | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_1_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_2_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_4_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_5_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_6_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_7_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_9_not_null                                 | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_10_not_null                                | CHECK           |                         |                             | 
+ expenses                    | 2200_16563_12_not_null                                | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_1_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_2_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_3_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_4_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_6_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_7_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_9_not_null                                 | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_10_not_null                                | CHECK           |                         |                             | 
+ cash_movements              | 2200_16475_15_not_null                                | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_1_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_2_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_3_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_4_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_5_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_6_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_7_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_8_not_null                                 | CHECK           |                         |                             | 
+ generated_reports           | 2200_16572_9_not_null                                 | CHECK           |                         |                             | 
+ order_items                 | 2200_16580_1_not_null                                 | CHECK           |                         |                             | 
+ order_items                 | 2200_16580_2_not_null                                 | CHECK           |                         |                             | 
+ order_items                 | 2200_16580_3_not_null                                 | CHECK           |                         |                             | 
+ order_items                 | 2200_16580_4_not_null                                 | CHECK           |                         |                             | 
+ order_items                 | 2200_16580_6_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_1_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_2_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_3_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_4_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_7_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_8_not_null                                 | CHECK           |                         |                             | 
+ orders                      | 2200_16588_9_not_null                                 | CHECK           |                         |                             | 
+ password_reset_tokens       | 2200_16598_1_not_null                                 | CHECK           |                         |                             | 
+ password_reset_tokens       | 2200_16598_2_not_null                                 | CHECK           |                         |                             | 
+ password_reset_tokens       | 2200_16598_3_not_null                                 | CHECK           |                         |                             | 
+ password_reset_tokens       | 2200_16598_4_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_1_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_2_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_3_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_4_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_5_not_null                                 | CHECK           |                         |                             | 
+ payments                    | 2200_16606_7_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_1_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_2_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_3_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_6_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_8_not_null                                 | CHECK           |                         |                             | 
+ resellers                   | 2200_16652_9_not_null                                 | CHECK           |                         |                             | 
+ reseller_configuration      | 2200_16630_1_not_null                                 | CHECK           |                         |                             | 
+ reseller_configuration      | 2200_16630_2_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_1_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_2_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_3_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_4_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_5_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_6_not_null                                 | CHECK           |                         |                             | 
+ reseller_sales              | 2200_16643_7_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_1_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_2_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_3_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_4_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_5_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_8_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_9_not_null                                 | CHECK           |                         |                             | 
+ products                    | 2200_16620_14_not_null                                | CHECK           |                         |                             | 
+ product_history             | 2200_16613_1_not_null                                 | CHECK           |                         |                             | 
+ product_history             | 2200_16613_2_not_null                                 | CHECK           |                         |                             | 
+ product_history             | 2200_16613_3_not_null                                 | CHECK           |                         |                             | 
+ product_history             | 2200_16613_5_not_null                                 | CHECK           |                         |                             | 
+ product_history             | 2200_16613_6_not_null                                 | CHECK           |                         |                             | 
+ system_configuration        | 2200_16688_1_not_null                                 | CHECK           |                         |                             | 
+ stock_control_items         | 2200_16667_1_not_null                                 | CHECK           |                         |                             | 
+ stock_control_items         | 2200_16667_2_not_null                                 | CHECK           |                         |                             | 
+ stock_control_items         | 2200_16667_3_not_null                                 | CHECK           |                         |                             | 
+ stock_control_items         | 2200_16667_4_not_null                                 | CHECK           |                         |                             | 
+ stock_control_items         | 2200_16667_6_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_1_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_2_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_3_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_4_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_5_not_null                                 | CHECK           |                         |                             | 
+ users                       | 2200_16707_6_not_null                                 | CHECK           |                         |                             | 
+ vendors                     | 2200_16716_1_not_null                                 | CHECK           |                         |                             | 
+ vendors                     | 2200_16716_2_not_null                                 | CHECK           |                         |                             | 
+ vendors                     | 2200_16716_3_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_1_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_2_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_3_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_4_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_7_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_8_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_9_not_null                                 | CHECK           |                         |                             | 
+ stock_control_sessions      | 2200_24579_10_not_null                                | CHECK           |                         |                             | 
+ cash_schedule_config        | 2200_32769_1_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_config        | 2200_32769_2_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_1_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_2_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_3_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_4_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_5_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_6_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_7_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_8_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_9_not_null                                 | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_10_not_null                                | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_14_not_null                                | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_15_not_null                                | CHECK           |                         |                             | 
+ daily_reports               | 2200_16546_16_not_null                                | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_1_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_2_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_3_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_5_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_6_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_7_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_periods       | 2200_49153_8_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_client_config | 2200_49175_1_not_null                                 | CHECK           |                         |                             | 
+ cash_schedule_client_config | 2200_49175_2_not_null                                 | CHECK           |                         |                             | 
+ cash_auto_operations_log    | 2200_32795_1_not_null                                 | CHECK           |                         |                             | 
+ cash_auto_operations_log    | 2200_32795_2_not_null                                 | CHECK           |                         |                             | 
+ cash_auto_operations_log    | 2200_32795_3_not_null                                 | CHECK           |                         |                             | 
+(268 rows)
+
